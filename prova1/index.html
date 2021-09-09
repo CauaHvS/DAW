@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova1</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <style>
+        /*Geral*/
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+        * {
+            margin: 0 auto;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /*html*/
+        html {
+            background-color: lightcyan;
+            padding-top: 0;
+        }
+
+        /*header*/
+        #Home {
+            box-sizing: border-box;
+            text-align: center;
+            background-image: url("https://iconecolegioecurso.com.br/wp-content/uploads/2017/10/AUGUSTO-CURY-1080x675.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 500px;
+
+        }
+
+        #Home h1,
+        #Home h2 {
+            font-size: 50px;
+            color: #fff;
+        }
+
+        /*Menu*/
+        .menu {
+            background-color: rgb(37, 37, 39);
+            position: fixed;
+            position: sticky;
+            top: 0;
+        }
+
+        .menu ul {
+            max-width: 800px;
+            list-style: none;
+            padding: 0;
+        }
+
+        .menu ul li {
+            display: inline;
+        }
+
+        .menu ul li a {
+            color: white;
+            padding: 20px;
+            display: inline-block;
+            text-decoration: none;
+            transition: background .4s;
+        }
+
+        .menu ul li a:hover {
+            background-color: rgb(24, 139, 223);
+        }
+
+        .menu ul li:first-child a {
+            float: right;
+            background-color: rgb(24, 139, 233);
+        }
+
+        /*article*/
+        #Historia {
+            padding: 0;
+            margin: 2%;
+        }
+
+        #Historia p {
+            width: 500px;
+            display: inline-block;
+        }
+
+        img {
+            height: auto;
+            width: auto;
+            max-width: 400px;
+            max-height: 400px;
+        }
+
+        .img {
+            display: inline-block;
+            margin-left: 5%;
+        }
+
+        h2 h3 h4 {
+            color: rgb(49, 49, 49);
+        }
+
+        .page {
+            width: 500px;
+            padding: 0;
+            margin: 2%;
+        }
+
+        #Livros {
+            padding: 0;
+            margin: 2%;
+        }
+
+        #Livros .ficcao {
+            display: inline-block;
+        }
+
+        #Livros .ficcao ul {
+            width: 500px;
+            list-style: none;
+            display: inline-block;
+        }
+
+        #Livros .naoFiccao ul {
+            list-style: none;
+        }
+
+        hr {
+            width: 20%;
+            text-align: left;
+            margin: 0 auto 0 0;
+        }
+
+        /*footer*/
+        footer {
+            background-color: rgb(37, 37, 39);
+            padding-top: 5em;
+            padding-bottom: 40px;
+        }
+
+        footer h2,
+        footer p,
+        footer a,
+        footer span {
+            color: #D1D1D1;
+        }
+
+        footer h2 {
+            font-weight: 400;
+        }
+
+        footer a {
+            text-decoration: none;
+        }
+
+        footer ul {
+            padding: 0;
+        }
+
+        footer li {
+            list-style: none;
+        }
+
+        .footerBox {
+            width: 31%;
+            padding: 1%;
+            float: left;
+        }
+
+        footer .wrapper:after {
+            clear: both;
+            content: "";
+            display: block;
+        }
+
+        #contatos {
+            width: 80%;
+        }
+
+        #contatos h2 {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .footer-list li {
+            margin-bottom: 15px;
+        }
+
+        .footer-list a {
+            transition: .5%;
+        }
+
+        .footer-list a:hover {
+            color: white;
+        }
+
+        .footer-list li:after {
+            clear: both;
+            content: "";
+            display: block;
+        }
+
+        .contatos {
+            width: 80%;
+        }
+
+        .fab {
+            font-size: 30px;
+            margin-right: 10px;
+            float: left;
+        }
+
+        .footer-list li span {
+            float: left;
+            height: 30px;
+            line-height: 30px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #B2B2B2;
+        }
+
+        .footer-bottom p {
+            font-weight: 600;
+            margin-top: 40px;
+            margin-left: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="#menu">Home</a></li>
+                <li><a href="#Historia">Historia</a></li>
+                <li><a href="#Carreira">Carreira</a></li>
+                <li><a href="#Livros">Livros</a></li>
+                <li><a href="#contatos">Contato</a></li>
+            </ul>
+        </nav>
+        <div id="Home">
+
+            <h1>Augusto Cury</h1>
+            <h2>O autor mais lido da última década!</h2>
+
+        </div>
+        <br>
+    </header>
+    <div id="Historia">
+        <h2>Historia</h2>
+        <hr>
+        <h3>Dr. Augusto Cury </h3>
+        <br>
+        <p>Nasceu em Colina, São Paulo, no dia 2 de Outubro de 1958. Formou-se em Medicina pela Faculdade de
+            Medicina de
+            São
+            José do Rio Preto e concluiu seu doutorado internacional em Psicologia Multifocal pela Florida Christian
+            University no ano de 2013 com a tese: "Programa Freemind como ferramenta global para prevenção de
+            transtornos
+            psíquicos". Na carreira dedicou-se à pesquisa sobre as dinâmicas da emoção. É pós-graduado na PUC de São
+            Paulo.
+
+            Cury é professor de pós-graduação e conferencista em congressos nacionais e internacionais. Foi
+            conferencista no
+            13° Congresso Internacional sobre Intolerância e Discriminação da Universidade Brigham Young, nos
+            Estados
+            Unidos.
+
+            Foi considerado o autor mais lido da última década no Brasil, pela revista ISTOÉ e pelo jornal Folha de
+            S.
+            Paulo. Recebeu o prêmio de melhor ficção do ano de 2009 da Academia Chinesa de Literatura, pelo livro: O
+            Vendedor de Sonhos, que foi adaptado para o cinema em 2016, uma produção brasileira com direção de Jayme
+            Monjardim.
+        </p>
+        <div class="img">
+            <img src="https://cdn.pensador.com/img/authors/au/gu/augusto-cury-2-l.jpg" alt="imagem ugusto Cury">
+        </div>
+    </div>
+    <br>
+    <article class="page">
+        <h2 id="Carreira">Carreira</h2>
+        <hr>
+        <br>
+        <h3>Teoria da inteligência multifocal</h3>
+        <p>Pesquisador na área de qualidade de vida e desenvolvimento da inteligência, Cury desenvolveu pesquisas,
+            sem vínculo com universidades, voltadas à teoria da Inteligência Multifocal. A teoria visa explicar o
+            funcionamento da mente humana e as formas para exercer maior domínio sobre a nossa vida por meio da
+            inteligência e pensamento. Publicou “Inteligência Multifocal”, em 1999, onde apresenta mais de 30
+            elementos essenciais para a formação da inteligência humana, como o processo de interpretação e o fluxo
+            vital da energia psíquica.
+
+            É uma metodologia utilizada nas escolas Menthes, a qual promove o desenvolvimento emocional de crianças,
+            adolescentes e adultos. Desenvolveu o projeto Escola da Inteligência que tem como principal objetivo a
+            formação de pensadores através do ensino das funções intelectuais e emocionais mais importantes para
+            crianças e adolescentes, tais como o pensar antes de reagir, a proteção de sua emoção, o colocar-se no
+            lugar dos outros, expor e não impor as suas ideias. Também elaborou o Programa Freemind, para contribuir
+            em conjunto com as casas de acolhimento de usuário de drogas, clínicas, ambulatórios e escolas no
+            desenvolvimento de uma emoção saudável, para a prevenção e tratamento da dependência de drogas.
+
+            Recentemente a teoria da inteligência multifocal e o programa de gestão da emoção foram adotados na
+            pós-graduação Stricto Sensu da Universidade de São Paulo, onde dezenas de mestrandos e doutorandos já
+            fizeram a disciplina de gestão da emoção para formação de professores brilhantes.
+
+            Quando desafiado pelo escritor Paulo Coelho a comprovar os números da sua vendagem de livros, Augusto
+            Cury declarou: "A preocupação com o primeiro lugar é sintoma típico de uma sociedade doente e sedenta de
+            fama"
+        </p>
+
+        <br>
+    </article>
+    <div id="Livros">
+        <h2>Livros</h2>
+        <hr>
+        <br>
+        <h3>Ficção</h3>
+        <br>
+        <div class="ficcao">
+            <h4>Série Vendedor de Sonhos</h4>
+            <ul>
+                <li><a href="#">O Vendedor de Sonhos: O Chamado</a> - Dezembro de 2008</li>
+                <li><a href="#">O Vendedor de Sonhos e a Revolução dos Anônimos</a> - Janeiro de 2009</li>
+                <li><a href="#">O Semeador de Ideias</a> - 2009</li>
+            </ul>
+            <h4>Livro relacionado</h4>
+            <ul>
+                <li><a href="#">De Gênio e Louco Todo Mundo Tem um Pouco</a> - Novembro de 2009</li>
+            </ul>
+            <h4>Série Petrus Logus</h4>
+            <ul>
+                <li><a href="#">Petrus Logus - O Guardião do Tempo</a> (Editora Saraiva, 2014)</li>
+                <li><a href="#">Petrus Logus - Os Inimigos da Humanidade</a> (Editora Saraiva, 2016)</li>
+            </ul>
+            <h4>Série do Júlio Verne</h4>
+            <ul>
+                <li><a href="#">O Colecionador de Lágrimas - Holocausto Nunca Mais</a> - 2012</li>
+                <li><a href="#">Em busca do sentido da vida</a> - (Outubro 2013, Planeta do Brasil)</li>
+            </ul>
+            <h4>Série do Marco Polo</h4>
+            <ul>
+                <li><a href="#">O Homem Mais Inteligente da História</a> - (Sextante, 2016)</li>
+                <li><a href="#">O Homem Mais Feliz da História</a> - (Sextante, 2017)</li>
+                <li><a href="#">O Maior Líder da História</a> - (Sextante, 2020)</li>
+            </ul>
+        </div>
+        <div class="img">
+            <img src="https://m.media-amazon.com/images/I/51IVKCGWFNL.jpg" alt="Capa do livro Petrus Logus">
+        </div>
+        <br>
+        <h3>Não-Ficção</h3>
+        <br>
+        <div class="naoFiccao">
+            <h4>Coleção Análise da Inteligência de Cristo</h4>
+            <ul>
+                <li><a href="#">O Mestre dos Mestres vol. 1</a> - Março de 2006</li>
+                <li><a href="#">O Mestre da Sensibilidade vol. 2</a> - Março de 2006</li>
+                <li><a href="#">O Mestre da Vida vol. 3</a> - Março de 2006</li>
+                <li><a href="#">O Mestre do Amor vol. 4</a> - Março de 2006</li>
+                <li><a href="#">O Mestre Inesquecível vol. 5</a> - Março de 2006</li>
+            </ul>
+            <h4>Série O Código Da Inteligência</h4>
+            <ul>
+                <li><a href="#">O Código da Inteligência</a> - Maio de 2008</li>
+                <li><a href="#">O Código da Inteligência: Guia de Estudo</a> - Janeiro de 2009</li>
+                <li><a href="#">O Código da Inteligência e a Excelência Emocional</a> - Janeiro de 2011</li>
+                <li><a href="#">As Quatro Armadilhas da Mente e a Inteligência Multifocal</a> - Abril de 2015 - Traz
+                    os
+                    capítulos 1 a 9 do O Código de Inteligência</li>
+                <li><a href="#">Como Administrar Seu Intelecto</a> - Abril de 2015 - Traz os capítulos 10 a 11 do O
+                    Código de Inteligência</li>
+                <li><a href="#">Desenvolvendo a Excelência Profissional</a> - Traz os capítulos 12 a 15 do O Código
+                    de
+                    Inteligência</li>
+                <li><a href="#">Bons Profissionais e Excelentes Profissionais</a>- Abril de 2015- Traz os capítulos
+                    16 a
+                    19 do O Código de Inteligência</li>
+            </ul>
+        </div>
+    </div>
+
+    <br>
+    <footer>
+        <div class="wrapper">
+            <div class="footerBox">
+                <div id="contatos">
+                    <img src="https://s3-sa-east-1.amazonaws.com/static.standout.com.br/sandbox/products/img_FAlJaN5eh8GWnwsr.png"
+                        alt="Logo instituto Augusto Cury">
+                    <h2>contato</h2>
+                    <ul class="footer-list">
+                        <li><a href="mailto=contato@augustocury.com.br">Email</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footerBox">
+                <div class="cursos">
+                    <h2>Cursos</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">Gestão da Emoção</a></li>
+                        <li><a href="#">Mulheres Reais</a></li>
+                        <li><a href="#">Combatendo a Ansiedade</a></li>
+                        <li><a href="#">Pais Brilhantes</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footerBox">
+                <div class="redes">
+                    <h2>Redes Sociais</h2>
+                    <ul class="footer-list">
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-facebook-square"></i>
+                                <span>Facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-youtube"></i>
+                                <span>Youtube</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="wrapper">
+                <p>Cauã Henrique - 2021 <sup>&copy;</sup></p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+</body>
+
+</html>
