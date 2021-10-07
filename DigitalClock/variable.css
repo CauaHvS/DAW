@@ -1,0 +1,20 @@
+/* >>>>> VARIABLE <<<<< */
+
+:root {
+    font-size: 62.5%;
+
+    /* fonts type */
+    --calibri-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --poppins-font: 'poppins', sans-serif;
+    --dm-sans-font: 'DM Sana', sans-serif;
+
+    /* fonts size */
+    --large-font-size: 10.0rem;
+    --smal-font-size: 4, 0rem;
+
+    /* colors */
+    --bgcolor: #091921;
+    --contrast-color: #FF105E;
+    --lighter-color: #999A9A;
+    --darker-color: #2C2C2C;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+</head>
+<style>
+
+    /* 
+     * Referência: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+     */
+    html {
+        box-sizing: border-box;
+    }
+
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+
+    div {
+        width: 300px;
+        height: 100px;
+        padding: 10px;
+
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin: 10px;
+        box-shadow: 1px 1px 2px #444;
+    }
+
+    div header {
+        margin: 0 0 10px 0;
+    }
+
+    /* single colon for IE 8 */
+    div:after {
+        content: "pseudo 150px";
+        display: block;
+        width: 150px;
+        background: #eee;
+        padding: 10px;
+        border-radius: 4px;
+    }
+
+    /*
+     * Somente este componente será: box-sizing: content-box;
+     */
+    .module {
+        box-sizing: content-box;
+    }
+
+    /* single colon for IE 8 */
+    .module:after {
+        content: "pseudo 150px";
+        display: block;
+        width: 150px;
+        padding: 10px;
+    }
+</style>
+
+<body>
+    <div>
+        <header>module 300px</header>
+    </div>
+
+    <div class="module">
+        <header>module 300px with content-box</header>
+    </div>
+</body>
+
+</html>
