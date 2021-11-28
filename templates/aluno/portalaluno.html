@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block conteudo %}
+<h1>Portal do Aluno</h1>
+<h2>Materias</h2>
+<a href="/portalAluno">Todas as Materias</a>
+{% for alunos in lista_materias %}
+<a href="{{ materias.get_absolute_url }}">{{ alunos.nome }}</a>
+{% endfor %}
+
+<h2>Alunos</h2>
+<div class="produtos__container">
+    {% for alunos in lista_alunos %}
+    <div class="card produto__card">
+        <img class="card-img-top" src="{{ Alunos.imagem.url }}" alt="Card image cap">
+        <div class="card-body">
+            <p class="card-title">{{ Alunos.nome }}</p>
+            <p> Registro Academico {{ Alunos.registroAcademico }}</p>
+            <a href="{{ Alunos.get_absolute_url }}" class="btn btn-primary">Ver mais...</a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock conteudo %}

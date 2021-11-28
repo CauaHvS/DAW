@@ -1,9 +1,11 @@
 from django.urls import path
-from .views import index, sobre, contato
+from .views import *
 
 
 urlpatterns = [
     path('', index, name='index'),
-    path('sobre/', sobre, name='sobre'),
-    path('contato/', contato, name='contato')
+    path('index/', index, name='index'),
+    path('cienciacomputacao/', cienciacomputacao, name='cienciacomputacao'),
+    path('engenhariacivil/', engenhariacivil, name='engenhariacivil'),
+    path('arquiteturaeurbanismo/', arquiteturaeurbanismo, name='arquiteturaeurbanismo'),
 ]

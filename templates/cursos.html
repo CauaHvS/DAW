@@ -7,19 +7,18 @@
     <title>Projeto Django</title>
 
     {% include 'cssImport.html' %}
+    {% include 'barra_navegacao.html' %}
 
     <!-- CSS Específico deste projeto -->
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-    <link rel="stylesheet" href="{% static 'css/produtos.css' %}">
-    {% include 'barra_navegacao.html' %}
+    <link rel="stylesheet" href="{% static 'css/styleCursos.css' %}">
+
+
 
 </head>
 <body>
-<div class="container-fluid">
-    {% block conteudo %}
-    {% endblock conteudo %}
-</div>
 
+{% block conteudoCurso %}
+{% endblock conteudoCurso %}
 
 
 {% include 'scriptImport.html' %}
