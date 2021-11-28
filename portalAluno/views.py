@@ -4,7 +4,7 @@ from .models import Alunos, Materias
 
 def listar_alunos(request, slug_materias=None):
     materias = None
-    lista_materias = Materias.objects.all()
+    lista_materias = materias.objects.all()
     lista_alunos = Alunos.objects.filter(ativo=True)
     if slug_materias:
         materias = get_object_or_404(materias, slug=slug_materias)
@@ -24,7 +24,7 @@ def perfil_aluno(request, id_aluno, slug_aluno):
                                 slug=slug_aluno,
                                 ativo=True)
     contexto = {
-        'Aluno': alunos,
+        'Alunos': alunos,
     }
     return render(request, 'produtos/detalhes.html', contexto)
 

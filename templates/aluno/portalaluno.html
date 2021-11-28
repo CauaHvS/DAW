@@ -1,21 +1,38 @@
 {% extends "base.html" %}
 {% block conteudo %}
 <h1>Portal do Aluno</h1>
-<h2>Materias</h2>
-<a href="/portalAluno">Todas as Materias</a>
-{% for alunos in lista_materias %}
-<a href="{{ materias.get_absolute_url }}">{{ alunos.nome }}</a>
+<br>
+<h3><a href="/portalAluno">Todas as Materias</a></h3>
+{% for materias in lista_materias %}
+<h3><a href="{{ materias.get_absolute_url }}">{{ categoria.nome }}</a></h3>
 {% endfor %}
 
-<h2>Alunos</h2>
+<h1>Alunos</h1>
+{% for produto in lista_produtos %}
+    <img src="{{ Alunos.imagem.url }}" alt="{{ Alunos.nome }}">
+    <h3><a href="{{ Alunos.get_absolute_url }}">{{ Alunos.nome }}</a>Registro Acacademico{{ Alunos.registroAcademico }}</h3>
+{% endfor %}
+{% endblock conteudo %}
+
+
+{% extends "base.html" %}
+{% block conteudo %}
+
+<h2>Categorias</h2>
+<a href="/produtos">Todas as categorias</a>
+{% for categoria in lista_categorias %}
+<a href="{{ categoria.get_absolute_url }}">{{ categoria.nome }}</a>
+{% endfor %}
+
+<h2>Produtos</h2>
 <div class="produtos__container">
-    {% for alunos in lista_alunos %}
+    {% for produto in lista_produtos %}
     <div class="card produto__card">
-        <img class="card-img-top" src="{{ Alunos.imagem.url }}" alt="Card image cap">
+        <img class="card-img-top" src="{{ produto.imagem.url }}" alt="Card image cap">
         <div class="card-body">
-            <p class="card-title">{{ Alunos.nome }}</p>
-            <p> Registro Academico {{ Alunos.registroAcademico }}</p>
-            <a href="{{ Alunos.get_absolute_url }}" class="btn btn-primary">Ver mais...</a>
+            <p class="card-title">{{ produto.nome }}</p>
+            <p> R${{ produto.preco }}</p>
+            <a href="{{ produto.get_absolute_url }}" class="btn btn-primary">Ver mais detalhes...</a>
         </div>
     </div>
     {% endfor %}

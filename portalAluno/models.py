@@ -38,7 +38,7 @@ class Materias(Base):
 class Alunos(Base):
     nome = models.CharField('Nome', max_length=200)
     idade = models.IntegerField('Idade')
-    registroAcademico = models.CharField('Registro Academico', max_length=10)
+    registroAcademico = models.CharField('Registro Academico', max_length=8)
     email = models.CharField('email', max_length=200)
     imagem = StdImageField('Imagem', upload_to='Aluno', variations={'thumb': (300, 300)})
     slug = models.SlugField('Slug', max_length=250, unique=True, blank=True, editable=False)

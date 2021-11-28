@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block conteudo %}
 <h1>Perfil dos Alunos</h1>
-<img src="{{ Alunos.imagem.url }}" alt="{{ Alunos.nome }}">
-<h3><a href="{{ Alunos.get_absolute_url }}">{{ Alunos.nome }}</a>Registro Academico: {{ Alunos.registroAcademico }}</h3>
+<img src="{{ alunos.imagem.url }}" alt="{{ Alunos.nome }}">
+<h3><a href="{{ alunos.get_absolute_url }}">{{ Alunos.nome }}</a>Registro Academico: {{ Alunos.registroAcademico }}</h3>
 <p>{{ Alunos.email|safe|linebreaksbr }}</p>
 {% endblock conteudo %}
